@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 3vh 5vw;
+  box-sizing: border-box;
+  
+  .nav-logo {
+    font-weight: 700;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  nav {
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}

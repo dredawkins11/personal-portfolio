@@ -1,11 +1,19 @@
 import React from "react";
+import Header from "./components/Header";
 import "./styles/app.scss"
 
 const App = () =>{
     return (
-        <h1>
-            Welcome to my portfolio
-        </h1>
+        <React.Fragment>
+            <Header />
+            <main>
+                {/* <Intro /> */}
+                {/* <Projects /> */}
+                {/* <Skills /> */}
+                {/* <About /> */}
+            </main>
+            {/* <Footer /> */}
+        </React.Fragment>
     )
 }
 
