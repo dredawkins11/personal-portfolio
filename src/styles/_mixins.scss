@@ -1,0 +1,14 @@
+@use "variables";
+
+@mixin light-button {
+    border: 3px solid variables.$primary-text;
+    border-radius: .5rem;
+    color: variables.$secondary-text;
+    font-size: 1.5rem;
+    transition: all .2s;
+
+    &:hover {
+        color: variables.$primary-text;
+        background-color: variables.$background-color;
+    }
+}

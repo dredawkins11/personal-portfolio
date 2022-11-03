@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
-import "./styles/app.scss"
+import Intro from "./components/Intro";
+import "./styles/App.scss"
 
 const App = () =>{
     return (
         <React.Fragment>
             <Header />
             <main>
-                {/* <Intro /> */}
+                <Intro/>
                 {/* <Projects /> */}
                 {/* <Skills /> */}
                 {/* <About /> */}
