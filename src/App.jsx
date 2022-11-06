@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
+import Projects from "./components/Projects";
 import "./styles/App.scss"
 
 const App = () =>{
@@ -9,7 +10,7 @@ const App = () =>{
             <Header />
             <main>
                 <Intro/>
-                {/* <Projects /> */}
+                <Projects/>
                 {/* <Skills /> */}
                 {/* <About /> */}
             </main>

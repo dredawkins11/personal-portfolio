@@ -7,6 +7,19 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: variables.$primary-text;
     font-size: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    position: relative;
+    width: 5px;
+    right: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: variables.$primary-text;
+    border-radius: 10px;
 }
 
 main {
@@ -15,4 +28,5 @@ main {
     align-items: center;
     margin-top: 20vh;
     width: 100vw;
+    gap: 40vh;
 }

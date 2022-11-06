@@ -1,0 +1,24 @@
+@use "variables";
+@use "mixins";
+
+section {
+
+    h1 {
+        margin-bottom: 5vh;
+    }
+
+    .project-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+
+        .project-item {
+            width: calc(50% - 10px);
+            box-sizing: border-box;
+            aspect-ratio: 1 / 1;
+            border: 3px solid variables.$primary-text;
+            border-radius: 1rem;
+            background-color: variables.$primary-text;
+        }
+    }
+}
