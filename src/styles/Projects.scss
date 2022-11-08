@@ -15,7 +15,7 @@ section {
         .project-item {
             width: calc(50% - 10px);
             box-sizing: border-box;
-            aspect-ratio: 1 / 1;
+            aspect-ratio: 3 / 2;
             border: 3px solid variables.$primary-text;
             border-radius: 1rem;
             background-color: variables.$primary-text;

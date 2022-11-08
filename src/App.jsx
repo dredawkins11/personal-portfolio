@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import "./styles/App.scss"
 
 const App = () =>{
@@ -11,7 +12,7 @@ const App = () =>{
             <main>
                 <Intro/>
                 <Projects/>
-                {/* <Skills /> */}
+                <Skills/>
                 {/* <About /> */}
             </main>
             {/* <Footer /> */}
