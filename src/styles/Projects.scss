@@ -1,12 +1,6 @@
 @use "variables";
 @use "mixins";
 
-section {
-
-    h1 {
-        margin-bottom: 5vh;
-    }
-
     .project-container {
         display: flex;
         flex-flow: row wrap;
@@ -21,4 +15,3 @@ section {
             background-color: variables.$primary-text;
         }
     }
-}

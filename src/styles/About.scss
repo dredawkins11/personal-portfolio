@@ -1,0 +1,33 @@
+@use "variables";
+@use "mixins";
+
+.about-section {
+    display: flex;
+    flex-flow: column nowrap;
+
+    p {
+        margin: 0;
+        margin-bottom: 5vh;
+    }
+
+    .social-link-container {
+        display: flex;
+        gap: 3rem;
+
+        .social-link {
+            @include mixins.light-button;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+            aspect-ratio: 1;
+
+            svg {
+                width: 70%;
+                height: 70%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}

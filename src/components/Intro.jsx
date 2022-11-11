@@ -11,7 +11,7 @@ const Intro = () => {
         problem you may be faced with. Working with me is easy and I can assure
         you I will exceed your expectations!
       </p>
-      <button>learn more</button>
+      <button className="learn-more-button">learn more</button>
     </section>
   );
 };

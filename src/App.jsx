@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./components/About";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
@@ -13,7 +14,7 @@ const App = () =>{
                 <Intro/>
                 <Projects/>
                 <Skills/>
-                {/* <About /> */}
+                <About/>
             </main>
             {/* <Footer /> */}
         </React.Fragment>
