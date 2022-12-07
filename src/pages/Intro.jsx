@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Intro.scss";
 
 const Intro = () => {
@@ -8,7 +9,9 @@ const Intro = () => {
       <p>
         By Dre Dawkins
       </p>
-      <button className="explore-button">Explore</button>
+      <button className="explore-button">
+        <Link to={"/nav"}>Explore</Link>
+      </button>
     </section>
   );
 };

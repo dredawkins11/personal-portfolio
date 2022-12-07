@@ -8,14 +8,12 @@ const Background = (props) => {
             width: (i ? 100 -  (i * 5) + "vw" : "95vw"),
             height: (i ? 100 - (i * 5) + "vh" : "95vh"),
         });
-        console.log(layerStyle);
     }
-    console.log(props, layerStyle);
 
     return (
         <div className="base-background">
             {layerStyle.map((style, i) => {
-                return <div style={style}></div>;
+                return <div style={style} key={i}></div>;
             })}
         </div>
     );
