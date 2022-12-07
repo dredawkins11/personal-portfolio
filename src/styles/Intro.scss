@@ -1,9 +1,28 @@
 @use "variables";
 @use "mixins";
 
-    .learn-more-button {
-        @include mixins.light-button;
+    .intro-section {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
 
-        width: 20%;
-        height: 7vh;
+        h1 {
+            margin-bottom: 0;
+            font-weight: lighter;
+        }
+
+        p {
+            flex-grow: 1;
+            margin-top: 0;
+            font-weight: bolder
+        }
+    }
+
+    .explore-button {
+        @include mixins.dark-button;
+
+        width: 50%;
+        height: 10vh;
     }

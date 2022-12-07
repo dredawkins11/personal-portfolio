@@ -1,0 +1,17 @@
+.base-background {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+
+    div {
+        position: absolute;
+        opacity: 25%;
+        mix-blend-mode: color-burn;
+        background-color: #371C62;
+        box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.75) inset;
+    }
+}

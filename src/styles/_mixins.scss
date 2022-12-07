@@ -1,15 +1,42 @@
 @use "variables";
 
-@mixin light-button {
-    border: 3px solid variables.$primary-text;
-    border-radius: .5rem;
-    color: variables.$secondary-text;
+@mixin button {
+    border-radius: 0.5rem;
     font-size: 1.5rem;
-    transition: all .2s;
+    transition: all 0.2s linear;
+    border: 3px solid;
+
+    &:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+}
+
+@mixin light-button {
+    @include button;
+    border-color: variables.$primary-text;
+    color: variables.$secondary-text;
     background: variables.$primary-text;
 
     &:hover {
         color: variables.$primary-text;
         background-color: variables.$background-color;
+        box-shadow: variables.$lift-shadow;
+    }
+}
+
+@mixin dark-button {
+    @include button;
+    border-color: variables.$primary-text;
+    color: variables.$primary-text;
+    background: none;
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.3),
+        inset 0px 0px 30px 0px rgba(255, 255, 255, 0.3);
+    text-shadow: 0px 0px 30px #fff;
+
+    &:hover {
+        color: variables.$darkest-background;
+        background-color: variables.$primary-text;
+        box-shadow: variables.$lift-shadow;
     }
 }

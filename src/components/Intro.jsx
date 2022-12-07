@@ -3,15 +3,12 @@ import "../styles/Intro.scss";
 
 const Intro = () => {
   return (
-    <section>
-      <h1>hi, my name is dre</h1>
+    <section className="intro-section">
+      <h1>Full Stack Web Development</h1>
       <p>
-        Hi! I am a full-stack web developer here to bring your ideas to
-        fruition. I have a knack for coming up with creative solutions to any
-        problem you may be faced with. Working with me is easy and I can assure
-        you I will exceed your expectations!
+        By Dre Dawkins
       </p>
-      <button className="learn-more-button">learn more</button>
+      <button className="explore-button">Explore</button>
     </section>
   );
 };
