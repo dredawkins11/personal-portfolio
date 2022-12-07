@@ -4,9 +4,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Background from "./components/Background";
 import Intro from "./pages/Intro";
 import Nav from "./pages/Nav";
-import About from "./components/About";
-import Header from "./components/Header";
-import Projects from "./components/Projects";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 import "./styles/App.scss";
 
 const App = () => {

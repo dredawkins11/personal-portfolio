@@ -1,7 +1,7 @@
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
-import "../styles/About.scss";
+import "./About.scss";
 
 const About = () => {
     return (

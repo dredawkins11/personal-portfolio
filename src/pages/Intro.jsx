@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Intro.scss";
+import "./Intro.scss";
 
 const Intro = () => {
   return (
