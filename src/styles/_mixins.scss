@@ -5,22 +5,23 @@
     transition: all 0.2s linear;
     border: 3px solid;
     border-radius: 0.5rem;
+    font-weight: bold;
 
     &:hover {
-        transform: scale(1.03);
+        transform: scale(1.005);
         cursor: pointer;
     }
 }
 
 @mixin light-button {
     @include button;
-    border-color: variables.$primary-text;
-    color: variables.$secondary-text;
-    background: variables.$primary-text;
+    border-color: variables.$primary-color;
+    color: variables.$primary-text;
+    background: variables.$primary-color;
 
     &:hover {
         color: variables.$primary-text;
-        background-color: variables.$background-color;
+        background: variables.$darkest-background;
     }
 }
 
@@ -31,7 +32,7 @@
     background: none;
     box-shadow: variables.$glow-shadow,
         inset 0px 0px 30px 0px rgba(255, 255, 255, 0.3);
-    text-shadow: 0px 0px 30px #fff;
+    text-shadow: variables.$glow-text;
 
     &:hover {
         color: variables.$darkest-background;

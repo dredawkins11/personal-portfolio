@@ -1,0 +1,18 @@
+@use "../styles/variables";
+@use "../styles/mixins";
+
+.project-item {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    transform: rotateY(calc(var(--offset) * 50deg))
+        scale(calc(1 + var(--abs-offset) * -0.9))
+        translateZ(calc(var(--abs-offset) * -200rem));
+        // translateX(calc(var(--direction) * -5rem));
+    filter: blur(calc(var(--abs-offset) * 10rem)) brightness(calc(var(--active)));
+    // filter: brightness(calc(var(--active)));
+    transition: all 1s ease-out;
+    border: 3px solid variables.$primary-color;
+    background-color: variables.$primary-color;
+    border-radius: 1rem;
+}

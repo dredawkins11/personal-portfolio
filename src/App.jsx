@@ -1,7 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Background from "./components/Background";
+import NavButton from "./assets/images/nav.svg";
 import Intro from "./pages/Intro";
 import Nav from "./pages/Nav";
 import About from "./pages/About";
@@ -15,6 +17,9 @@ const App = () => {
         <div>
             <Background layers={10} />
             <main>
+                <Link to={"/nav"} className="nav-button">
+                    <NavButton />
+                </Link>
                 <Routes>
                     <Route path="/" element={<Intro />} />
                     <Route path="/nav" element={<Nav />} />
@@ -23,7 +28,6 @@ const App = () => {
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </main>
-            {/* <Footer /> */}
         </div>
     );
 };
