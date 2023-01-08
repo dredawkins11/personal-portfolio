@@ -1,10 +1,10 @@
 @use "variables";
 
 @mixin button {
-    border-radius: 0.5rem;
     font-size: 1.5rem;
     transition: all 0.2s linear;
     border: 3px solid;
+    border-radius: 0.5rem;
 
     &:hover {
         transform: scale(1.03);
@@ -21,7 +21,6 @@
     &:hover {
         color: variables.$primary-text;
         background-color: variables.$background-color;
-        box-shadow: variables.$lift-shadow;
     }
 }
 
@@ -30,13 +29,12 @@
     border-color: variables.$primary-text;
     color: variables.$primary-text;
     background: none;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.3),
+    box-shadow: variables.$glow-shadow,
         inset 0px 0px 30px 0px rgba(255, 255, 255, 0.3);
     text-shadow: 0px 0px 30px #fff;
 
     &:hover {
         color: variables.$darkest-background;
         background-color: variables.$primary-text;
-        box-shadow: variables.$lift-shadow;
     }
 }

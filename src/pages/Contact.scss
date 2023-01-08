@@ -1,0 +1,64 @@
+@use "../styles/variables";
+
+.contact-section {
+    height: 60vh;
+
+    form {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+
+        .input-container {
+            display: flex;
+            gap: 2vh;
+
+            input {
+                flex-grow: 1;
+                height: 3rem;
+                padding: 1rem;
+                font-size: 1.5rem;
+                color: variables.$primary-text;
+                caret-color: variables.$primary-text;
+                box-sizing: border-box;
+                background: none;
+                border: 3px variables.$primary-text solid;
+                border-radius: 0.5rem;
+                box-shadow: variables.$glow-shadow, inset variables.$glow-shadow;
+
+                &::placeholder {
+                    color: variables.$primary-text;
+                    opacity: .7;
+                }
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+        }
+
+        textarea {
+            flex-grow: 1;
+            resize: none;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-family: inherit;
+            color: variables.$primary-text;
+            caret-color: variables.$primary-text;
+            background: none;
+            border: 3px variables.$primary-text solid;
+            border-radius: 0.5rem;
+            box-shadow: variables.$glow-shadow, inset variables.$glow-shadow;
+
+            &::placeholder {
+                color: variables.$primary-text;
+                opacity: .7;
+                
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+}
